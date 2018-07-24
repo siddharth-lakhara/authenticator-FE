@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  font-size: 2em;
+}
+
+.ghost {
+  display: flex;
+  flex: 1;
+}
+
+.loginButton {
+  border: none;
+  font-size: 20px;
+  width: 100px;
+  background-color: rgb(245, 130, 122);
+}
+
+.registerButton {
+  border: none;
+  font-size: 20px;
+  width: 100px;
+}

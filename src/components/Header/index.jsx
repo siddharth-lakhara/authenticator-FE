@@ -1,8 +1,18 @@
 import React from 'react';
+import './Header.css';
 
 const Header = ({ props }) => (
   <div className="header">
-      Header goes here1
+    <div>
+    Welcome !
+    </div>
+    <div className="ghost" />
+    <button type="button" className="loginButton">
+      Log in
+    </button>
+    <button type="button" className="registerButton">
+      Sign up
+    </button>
   </div>
 );
 
