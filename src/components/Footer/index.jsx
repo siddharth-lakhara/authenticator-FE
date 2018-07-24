@@ -1,8 +1,9 @@
 import React from 'react';
+import './footer.css';
 
 const Footer = ({ props }) => (
   <div className="footer">
-      Footer goes here1
+      Made by Siddharth Lakhara
   </div>
 );
 
