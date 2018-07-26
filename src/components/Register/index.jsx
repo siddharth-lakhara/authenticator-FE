@@ -19,8 +19,13 @@ class Register extends React.Component {
   }
 
   onSubmit = () => {
-    const { userName, password } = this.state;
+    const {
+      firstName, lastName, email, userName, password,
+    } = this.state;
     const payload = {
+      firstName,
+      lastName,
+      email,
       userName,
       password,
     };
@@ -35,8 +40,8 @@ class Register extends React.Component {
           if (code !== 200) {
             window.alert(reply.message);
           } else {
-            window.localStorage.setItem('token', reply.token);
-            this.props.history.push('/');
+            window.alert(reply.message);
+            this.props.history.push('/login');
           }
         });
       });
