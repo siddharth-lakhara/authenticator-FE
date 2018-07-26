@@ -8,6 +8,10 @@
   font-size: 25px;
 }
 
+.loginMessage {
+  background-color: white;
+}
+
 .login-border {
   display: flex;
   justify-content: space-around;
@@ -53,4 +57,11 @@
   font-size: 25px;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.login-goBack {
+  border: 2px solid black;
+  border-radius: 25px;
+  align-self: center;
+  width: 70%;
 }
