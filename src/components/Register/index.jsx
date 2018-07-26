@@ -1,5 +1,7 @@
 import React from 'react';
 import InputItems from '../InputItems';
+import Header from '../Header';
+import Footer from '../Footer';
 import './register.css';
 
 class Register extends React.Component {
@@ -53,50 +55,54 @@ class Register extends React.Component {
     } = this.state;
     const { onChange, onSubmit } = this;
     return (
-      <div className="login">
-        <div className="register-border">
-          <div className="login-login">
+      <div className="App-main">
+        <Header history={this.props.history} />
+        <div className="login">
+          <div className="register-border">
+            <div className="login-login">
               Register
-          </div>
-          <div className="login-inputItems">
-            <InputItems
-              name="firstName"
-              value={firstName}
-              title="First name"
-              type="text"
-              onChange={onChange}
-            />
-            <InputItems
-              name="lastName"
-              value={lastName}
-              title="Last name"
-              type="text"
-              onChange={onChange}
-            />
-            <InputItems
-              name="email"
-              value={email}
-              title="email"
-              type="text"
-              onChange={onChange}
-            />
-            <InputItems
-              name="userName"
-              value={userName}
-              title="User name"
-              type="text"
-              onChange={onChange}
-            />
-            <InputItems
-              name="password"
-              value={password}
-              title="Password"
-              type="password"
-              onChange={onChange}
-            />
-            <button type="button" onClick={onSubmit} className="login-submit">Submit</button>
+            </div>
+            <div className="login-inputItems">
+              <InputItems
+                name="firstName"
+                value={firstName}
+                title="First name"
+                type="text"
+                onChange={onChange}
+              />
+              <InputItems
+                name="lastName"
+                value={lastName}
+                title="Last name"
+                type="text"
+                onChange={onChange}
+              />
+              <InputItems
+                name="email"
+                value={email}
+                title="email"
+                type="text"
+                onChange={onChange}
+              />
+              <InputItems
+                name="userName"
+                value={userName}
+                title="User name"
+                type="text"
+                onChange={onChange}
+              />
+              <InputItems
+                name="password"
+                value={password}
+                title="Password"
+                type="password"
+                onChange={onChange}
+              />
+              <button type="button" onClick={onSubmit} className="login-submit">Submit</button>
+            </div>
           </div>
         </div>
+        <Footer history={this.props.history} />
       </div>
     );
   }

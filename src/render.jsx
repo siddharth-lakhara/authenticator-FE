@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RouterPage from './RouterPage';
+import Routes from './Routes';
+import './render.css';
 
 const render = () => {
-  ReactDOM.render(<RouterPage />, document.getElementById('root'));
+  ReactDOM.render(<Routes />, document.getElementById('root'));
 };
 
 export default render;
