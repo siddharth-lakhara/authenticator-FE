@@ -1,4 +1,5 @@
 import React from 'react';
+import InputItems from '../InputItems';
 import './login.css';
 
 class Login extends React.Component {
@@ -50,14 +51,20 @@ class Login extends React.Component {
               LOGIN
             </div>
             <div className="login-inputItems">
-              <div className="login-userName">
-                <div className="login-text">User name:</div>
-                <input className="login-inputFields" name="userName" value={userName} type="text" onChange={onChange} />
-              </div>
-              <div className="login-password">
-                <div className="login-text">Password:</div>
-                <input className="login-inputFields" name="password" value={password} type="password" onChange={this.onChange} />
-              </div>
+              <InputItems
+                name="userName"
+                value={userName}
+                title="User name"
+                type="text"
+                onChange={onChange}
+              />
+              <InputItems
+                name="password"
+                value={password}
+                title="Password"
+                type="password"
+                onChange={onChange}
+              />
               <button type="button" onClick={onSubmit} className="login-submit">Submit</button>
             </div>
           </div>

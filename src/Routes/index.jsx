@@ -5,13 +5,14 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import { App, Login } from '../components';
+import { App, Login, Register } from '../components';
 
 export default () => (
   <Router>
     <Switch>
       <Route path="/" exact component={App} />
       <Route path="/login" exact component={Login} />
+      <Route path="/register" exact component={Register} />
     </Switch>
   </Router>
 );
