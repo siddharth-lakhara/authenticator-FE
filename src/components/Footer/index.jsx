@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 
-const Footer = ({ props }) => (
+const Footer = () => (
   <div className="footer">
       Made by Siddharth Lakhara
   </div>
