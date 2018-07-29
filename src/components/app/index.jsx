@@ -13,16 +13,18 @@ class App extends React.Component {
 
   componentDidMount() {
     const token = window.localStorage.getItem('token');
-    const request = {
-      method: 'POST',
-      headers: { Authorization: token },
-    };
-    fetch('/info', request)
-      .then((res) => {
-        res.json().then((reply) => {
-          this.updateState(reply);
+    if (token !== null) {
+      const request = {
+        method: 'POST',
+        headers: { Authorization: token },
+      };
+      fetch('/info', request)
+        .then((res) => {
+          res.json().then((reply) => {
+            this.updateState(reply);
+          });
         });
-      });
+    }
   }
 
   updateState = ({
