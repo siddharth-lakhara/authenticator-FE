@@ -64,6 +64,7 @@ class App extends React.Component {
                       <div className="text-label"><strong>First Name:</strong> {firstName}</div>
                       <div className="text-label"><strong>Last Name:</strong> {lastName}</div>
                     </div>
+                    <br />Go to <code><mark style={{ backgroundColor: 'lightgrey' }}>/test</mark></code> which tries to fetch the same information without JWT token
                   </div>
                 )}
         </div>
