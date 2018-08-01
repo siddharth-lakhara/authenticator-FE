@@ -12,4 +12,4 @@ Blog - [Part 1](https://medium.com/@siddharth.lakhara/using-jwt-to-build-login-r
 
 Blog - [Part 2](https://medium.com/@siddharth.lakhara/using-jwt-to-build-login-register-form-on-hapijs-and-reactjs-part-2-d95b79752e4d) <br />
 
-BE repo - `https://github.com/siddharth-lakhara/authenticator-BE`
+[BE repo](https://github.com/siddharth-lakhara/authenticator-BE)
