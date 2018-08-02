@@ -10,6 +10,7 @@ Authenticator is a login register page built on Hapi.JS and ReactJS. The authent
 ## Usage
 ```
 git clone https://github.com/siddharth-lakhara/authenticator-FE.git
+npm install
 ```
 
 ## Relevant Links
